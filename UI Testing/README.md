@@ -127,11 +127,13 @@ O escopo do plano de testes cobre a validação completa da interface de usuári
 
 ## **6. Lista de Bugs Encontrados e Evidências**
 
-1. **Mensagem de erro cortada ao tentar login com dados inváldos.**
-![ISSUE#01 - TC02](/Evidências/ISSUE01 - TC02.png)
-2. **Mensagem de erro cortada ao tentar login com dados inváldos.**
-3. **Mensagem de erro ao tentar login com dados inváldos pouco formal.**
-4. **Mensagem de erro ao tentar login sem dados pouco intuitiva.**
+1. **Mensagem de erro cortada ao tentar login com dados inválidos.**
+![Mensagem de erro cortada ao tentar login com dados inválidos](https://github.com/rayrabulcao/teste-pratico-qa/blob/main/UI%20Testing/Evid%C3%AAncias/ISSUE01%20-%20TC02.png)
+2. **Mensagem de erro ao tentar login com dados inválidos está pouco formal.**
+![Mensagem de erro ao tentar login com dados inválidos porco formal](https://github.com/rayrabulcao/teste-pratico-qa/blob/main/UI%20Testing/Evid%C3%AAncias/ISSUE02%20-%20TC02.png)
+3. **Mensagem de erro ao tentar login sem dados está pouco intuitiva.**
+![Mensagem de erro ao tentar login sem dados está pouco intuitiva](https://github.com/rayrabulcao/teste-pratico-qa/blob/main/UI%20Testing/Evid%C3%AAncias/ISSUE03%20-%20TC02.png)
+4. 
 
 ---
 
