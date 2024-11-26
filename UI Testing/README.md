@@ -121,6 +121,7 @@ O escopo do plano de testes cobre a validação completa da interface de usuári
    - Tornar o botão "Remove" mais visível para o usuário.
 
 4. **Acrescentar/dimunir quantidade do produto**:
+
 	- Adicionar um botão que conceda a opção de adicionar/diminuir quantida de produto a ser adquirido, tanto no home quanto no carrinho.
 
 ---
@@ -133,7 +134,10 @@ O escopo do plano de testes cobre a validação completa da interface de usuári
 ![Mensagem de erro ao tentar login com dados inválidos porco formal](https://github.com/rayrabulcao/teste-pratico-qa/blob/main/UI%20Testing/Evid%C3%AAncias/ISSUE02%20-%20TC02.png)
 3. **Mensagem de erro ao tentar login sem dados está pouco intuitiva.**
 ![Mensagem de erro ao tentar login sem dados está pouco intuitiva](https://github.com/rayrabulcao/teste-pratico-qa/blob/main/UI%20Testing/Evid%C3%AAncias/ISSUE03%20-%20TC02.png)
-4. 
+4. **Mensagem de erro ao tentar login com dados bloqueados pouco amigável.**
+5. **Sem mensagem e opção de confirmação de cancelamento de compra **
+
+
 
 ---
 
@@ -182,5 +186,4 @@ O escopo do plano de testes cobre a validação completa da interface de usuári
   - Selenium com Robot Framework ou Python.
 
 ---
-
 
