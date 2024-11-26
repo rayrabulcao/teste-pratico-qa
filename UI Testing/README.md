@@ -120,9 +120,9 @@ O escopo do plano de testes cobre a validação completa da interface de usuári
 3. **Layout do carrinho**:
    - Tornar o botão "Remove" mais visível para o usuário.
 
-4. **Acrescentar/dimunir quantidade do produto**:
+4. **Acrescentar/diminuir quantidade do produto**:
 
-	- Adicionar um botão que conceda a opção de adicionar/diminuir quantida de produto a ser adquirido, tanto no home quanto no carrinho.
+	- Adicionar um botão que conceda a opção de adicionar/diminuir quantidade de produto a ser adquirido, tanto no home quanto no carrinho.
 
 ---
 
@@ -135,7 +135,19 @@ O escopo do plano de testes cobre a validação completa da interface de usuári
 3. **Mensagem de erro ao tentar login sem dados está pouco intuitiva.**
 ![Mensagem de erro ao tentar login sem dados está pouco intuitiva](https://github.com/rayrabulcao/teste-pratico-qa/blob/main/UI%20Testing/Evid%C3%AAncias/ISSUE03%20-%20TC02.png)
 4. **Mensagem de erro ao tentar login com dados bloqueados pouco amigável.**
-5. **Sem mensagem e opção de confirmação de cancelamento de compra **
+![Mensagem de erro ao tentar login com dados bloqueados pouco amigável.](https://github.com/rayrabulcao/teste-pratico-qa/blob/main/UI%20Testing/Evid%C3%AAncias/ISSUE04%20-%20TC03.png)
+5. **Sem mensagem e opção de confirmação de cancelamento de compra.**
+[Assista ao vídeo do teste](https://github.com/rayrabulcao/teste-pratico-qa/blob/main/UI%20Testing/Evid%C3%AAncias/ISSUE05-TC15.mp4)
+6. **Sem opção de retornar a página anterior na página da aplicação.**
+[Assista ao vídeo do teste](https://github.com/rayrabulcao/teste-pratico-qa/blob/main/UI%20Testing/Evid%C3%AAncias/ISSUE06%20-%20TC17.mp4)
+
+### **6.1 Outros bugs encontrados em teste exploratório**
+Aqui estão listados alguns problemas identificados utilizando o usuário `problem_user`.
+1. Ao logar com usuário problem_user a aplicação apresenta erros como imagens dos produtos todos iguais e erradas, descrição e título dos produtos com erro e ao adicionar um item e em seguida tentar remove-lo no home, a aplicação não atende a ação. Só é possível remover se optar por ir ao carrinho.
+2. Outro problema identificado com o referido usuário é de, quando clicamos para visualizar um produto ele acaba abrindo informações de outro produto.
+3. O filtro com esse mesmo usuário (`problem_user`) não está funcionando, ao selecionar qualquer opção do mesmo nenhuma ação é realizada.
+4. Ao tentar adicionar todos os produtos ao carrinho, estando logado como `problem_user`, apenas três deles são adicionados ao mesmo.
+5. Ao clicar no carrinho e tentar finalizar a compra com o usuário `problem_user`, percebeu-se que é possível inserir o nomes mas ao inserir o sobrenome ele acaba sobrescrevendo o nome inserido anteriormente.
 
 
 
