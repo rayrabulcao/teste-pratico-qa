@@ -143,11 +143,11 @@ O escopo do plano de testes cobre a validação completa da interface de usuári
 
 ### **6.1 Outros bugs encontrados em teste exploratório**
 Aqui estão listados alguns problemas identificados utilizando o usuário `problem_user`.
-1. Ao logar com usuário problem_user a aplicação apresenta erros como imagens dos produtos todos iguais e erradas, descrição e título dos produtos com erro e ao adicionar um item e em seguida tentar remove-lo no home, a aplicação não atende a ação. Só é possível remover se optar por ir ao carrinho.
-2. Outro problema identificado com o referido usuário é de, quando clicamos para visualizar um produto ele acaba abrindo informações de outro produto.
-3. O filtro com esse mesmo usuário (`problem_user`) não está funcionando, ao selecionar qualquer opção do mesmo nenhuma ação é realizada.
-4. Ao tentar adicionar todos os produtos ao carrinho, estando logado como `problem_user`, apenas três deles são adicionados ao mesmo.
-5. Ao clicar no carrinho e tentar finalizar a compra com o usuário `problem_user`, percebeu-se que é possível inserir o nomes mas ao inserir o sobrenome ele acaba sobrescrevendo o nome inserido anteriormente.
+1. Ao logar com usuário problem_user a aplicação apresenta erros como imagens dos produtos todos iguais e erradas, descrição e título dos produtos com erro e ao adicionar um item e em seguida tentar remove-lo no home, a aplicação não atende a ação. Só é possível remover se optar por ir ao carrinho. [Assista ao vídeo do teste](https://github.com/rayrabulcao/teste-pratico-qa/blob/main/UI%20Testing/Evid%C3%AAncias/ISSUE07.mp4)
+2. Outro problema identificado com o referido usuário é de, quando clicamos para visualizar um produto ele acaba abrindo informações de outro produto. [Assista ao vídeo do teste](https://github.com/rayrabulcao/teste-pratico-qa/blob/main/UI%20Testing/Evid%C3%AAncias/ISSUE07.mp4)
+3. O filtro com esse mesmo usuário (`problem_user`) não está funcionando, ao selecionar qualquer opção do mesmo nenhuma ação é realizada. [Assista ao vídeo do teste](https://github.com/rayrabulcao/teste-pratico-qa/blob/main/UI%20Testing/Evid%C3%AAncias/ISSUE08.mp4)
+4. Ao tentar adicionar todos os produtos ao carrinho, estando logado como `problem_user`, apenas três deles são adicionados ao mesmo. [Assista ao vídeo do teste](https://github.com/rayrabulcao/teste-pratico-qa/blob/main/UI%20Testing/Evid%C3%AAncias/ISSUE09.mp4)
+5. Ao clicar no carrinho e tentar finalizar a compra com o usuário `problem_user`, percebeu-se que é possível inserir o nomes mas ao inserir o sobrenome ele acaba sobrescrevendo o nome inserido anteriormente.[Assista ao vídeo do teste](https://github.com/rayrabulcao/teste-pratico-qa/blob/main/UI%20Testing/Evid%C3%AAncias/ISSUE10.mp4)
 
 
 
