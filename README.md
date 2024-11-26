@@ -33,3 +33,14 @@ O repositório foi criado para:
 
 - **Ferramentas**: Postman, Markdown, navegadores web para testes UI.
 - **Metodologias**: Testes manuais com documentação detalhada e boas práticas de QA.
+
+
+## Notas Gerais
+
+Devido a limitações de tempo e à falta de um ambiente de trabalho adequado, não foi possível realizar uma validação mais aprofundada dos testes de API. A execução dos testes foi limitada, principalmente, pela impossibilidade de configurar corretamente o ambiente de trabalho, uma vez que não disponho de um computador pessoal no momento. 
+
+Embora todos os cenários de teste tenham sido planejados e documentados de acordo com os requisitos da API, a execução foi parcial. Alguns testes importantes, especialmente aqueles que exigem configurações específicas do ambiente ou dependências externas, não puderam ser validados de forma completa.
+
+A recomendação é que os testes sejam executados em um ambiente de desenvolvimento controlado, onde seja possível configurar adequadamente as ferramentas necessárias para a validação dos fluxos e garantir que todas as funcionalidades da API sejam testadas de maneira profunda e eficaz.
+
+Com isso, fica claro que a documentação fornecida serve como um guia para os testes que precisam ser realizados em um ambiente de desenvolvimento mais adequado. Uma execução mais completa dos testes poderá ser realizada assim que as condições do ambiente de trabalho forem ajustadas.
