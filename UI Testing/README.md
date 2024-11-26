@@ -1,3 +1,4 @@
+
 # **Plano de Testes - UI Testing: Sauce Demo**
 
 ## **1. Objetivo**
@@ -65,20 +66,21 @@ O escopo do plano de testes cobre a validação completa da interface de usuári
 |------|------------------------------------------|--------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------|
 | TC13 | Adicionar produto ao carrinho            | 1. Selecionar um produto. <br> 2. Clicar em "Add to cart".                                       | Produto deve ser adicionado ao carrinho.                                          |
 | TC14 | Finalizar compra                         | 1. Ir ao carrinho. <br> 2. Clicar em "Checkout". <br> 3. Preencher os dados e finalizar compra. | Exibir mensagem de confirmação de compra.                                         |
+| TC15 | Cancelar uma compra                         | 1. Ir ao carrinho. <br> 2. Clicar em "Cancelar". <br> 3. Confirmar o cancelamento. | Exibir mensagem de confirmação de cancelamento e retornar ao home.                                         |
 
 ### **3.4 Carrinho**
 | ID   | Caso de Teste                            | Passos                                                                                           | Resultado Esperado                                                                 |
 |------|------------------------------------------|--------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------|
-| TC15 | Remover item do carrinho                 | 1. Adicionar produto ao carrinho. <br> 2. Clicar em "Remove".                                   | Produto deve ser removido do carrinho.                                            |
+| TC16 | Remover item do carrinho                 | 1. Adicionar produto ao carrinho. <br> 2. Clicar em "Remove".                                   | Produto deve ser removido do carrinho.                                            |
 
 ### **3.5 Navegação**
 | ID   | Caso de Teste                            | Passos                                                                                           | Resultado Esperado                                                                 |
 |------|------------------------------------------|--------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------|
-| TC16 | Logout com sucesso                       | 1. Abrir o menu lateral. <br> 2. Clicar em "Logout".                                            | Redirecionar para a página de login.                                              |
+| TC17 | Navegar para a página About                       | 1. Abrir o menu lateral. <br> 2. Clicar em "About". <br> 3. Clicar em retornar a página anterior.                                            | Redirecionar para a página de login.                                              |
 ### **3.6 Logout**
 | ID   | Caso de Teste                            | Passos                                                                                           | Resultado Esperado                                                                 |
 |------|------------------------------------------|--------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------|
-| TC17 | Logout com sucesso                       | 1. Abrir o menu lateral. <br> 2. Clicar em "Logout".                                            | Redirecionar para a página de login.                                              |
+| TC18 | Logout com sucesso                       | 1. Abrir o menu lateral. <br> 2. Clicar em "Logout".                                            | Redirecionar para a página de login.                                              |
 ---
 
 ## **4. Resultados dos Testes Executados**
@@ -93,15 +95,16 @@ O escopo do plano de testes cobre a validação completa da interface de usuári
 | TC06          | ✅ Sucesso | - O login com as credenciais informadas funcionou corretamente.                                                                 |
 | TC07          | ✅ Sucesso | - O login com as credenciais informadas funcionou corretamente.                                                        |
 | TC08          | ✅ Sucesso | - Exibida mensagem pedindo preenchimento dos campos obrigatórios.
-| TC09 | ✅ Sucesso | Produtos filtrados e ordenados corretamente. 
-| TC10 | ✅ Sucesso | Produtos filtrados e ordenados corretamente. | 
-| TC11 | ✅ Sucesso | Produtos filtrados e ordenados corretamente. 
-| TC12 | ✅ Sucesso | Produtos filtrados e ordenados corretamente. | 
-| TC13 | ✅ Sucesso | Produto adicionado corretamente ao carrinho. 
-| TC14 | ✅ Sucesso | Compra finalizada com sucesso. | 
-| TC15 | ✅ Sucesso | Item removido corretamente do carrinho. | 
-| TC16 | ✅ Sucesso | Item removido corretamente do carrinho. | 
-| TC17 | ✅ Sucesso | Logout redireciona corretamente para a página de login. |                                        |
+| TC09 | ✅ Sucesso | - Produtos filtrados e ordenados corretamente. 
+| TC10 | ✅ Sucesso | - Produtos filtrados e ordenados corretamente. | 
+| TC11 | ✅ Sucesso | - Produtos filtrados e ordenados corretamente. 
+| TC12 | ✅ Sucesso | - Produtos filtrados e ordenados corretamente. | 
+| TC13 | ✅ Sucesso | - Produto(s) adicionado(s) corretamente ao carrinho. 
+| TC14 | ✅ Sucesso | - A compra foi finalizada com sucesso. | 
+| TC15 | ⚠️ Falha | - Ao clicar em cancelar, a aplicação apenas redirecionada para a página anterior sem apresentar caixa de confirmação da ação. | 
+| TC16 | ✅ Sucesso | - O item removido corretamente do carrinho. | 
+| TC17 | ⚠️ Falha | - Só é possível retornar a página anterior pela opção do navegador, não tendo uma opção desta na própria aplicação. | 
+| TC18 | ✅ Sucesso | Logout redireciona corretamente para a página de login. |                                        |
 
 ---
 
@@ -119,3 +122,63 @@ O escopo do plano de testes cobre a validação completa da interface de usuári
 
 4. **Acrescentar/dimunir quantidade do produto**:
 	- Adicionar um botão que conceda a opção de adicionar/diminuir quantida de produto a ser adquirido, tanto no home quanto no carrinho.
+
+---
+
+## **6. Lista de Bugs Encontrados e Evidências**
+
+1. **Mensagem de erro cortada ao tentar login com dados inváldos.**
+![ISSUE#01 - TC02](/Evidências/ISSUE01 - TC02.png)
+2. **Mensagem de erro cortada ao tentar login com dados inváldos.**
+3. **Mensagem de erro ao tentar login com dados inváldos pouco formal.**
+4. **Mensagem de erro ao tentar login sem dados pouco intuitiva.**
+
+---
+
+## **7. Análise de Riscos**
+
+1. **Risco:** Problemas no fluxo de compra podem impactar diretamente as vendas.
+   - **Mitigação:** Priorizar a validação do fluxo completo de compra.
+   
+2. **Risco:** Mensagens de erro pouco claras podem confundir os usuários.
+   - **Mitigação:** Melhorar mensagens de erro antes do lançamento.
+
+3. **Risco:** Carrinho não possui botão de confirmação antes de esvaziar todos os itens.
+   - **Mitigação:** Adicionar mensagem de confirmação.
+
+---
+
+## **8. Extras**
+
+### **8.1 Testes de Responsividade**
+
+| Dispositivo          | Resultado  | Observação                                                                                       |
+|-----------------------|------------|-------------------------------------------------------------------------------------------------|
+| Mobile (iPhone 12)    | ✅ Sucesso | Layout responsivo e funcional.                                                                 |
+| Tablet (iPad)         | ✅ Sucesso | Exibição de conteúdo adequada.                                                                 |
+| Desktop               | ✅ Sucesso | Interface estável em diferentes resoluções.                                                    |
+
+### **8.2 Testes de Acessibilidade**
+
+- **Critérios Avaliados:**
+  - Uso de atributos ARIA.
+  - Contraste de cores.
+  - Navegação por teclado.
+
+- **Resultado:** Acessibilidade funcional, mas recomenda-se melhorias no contraste das mensagens de erro.
+
+### **8.3 Sugestões de Automação**
+
+- **Casos sugeridos para automação**:
+  - Login com diferentes tipos de usuários.
+  - Fluxo de compra completo.
+  - Adicionar e remover produtos do carrinho.
+  - Ordenação de filtro
+  - E2E (Fluxo completo abrangendo login, adição de produtoe finalização da compra)
+
+- **Ferramentas sugeridas**:
+  - Selenium com Robot Framework ou Python.
+
+---
+
+
